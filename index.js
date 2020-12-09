@@ -89,6 +89,6 @@ app.post("/responder", (req, res) => {
     // res.render("perguntar");
 });
 
-app.listen(8082, () => {
-    console.log("Servidor iniciado! http://localhost:8082")
+app.listen(80, () => {
+    console.log("Servidor iniciado! http://localhost")
 });
