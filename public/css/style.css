@@ -1,0 +1,23 @@
+body{
+    background-color: #eceff1;
+}
+
+#form-pergunta{
+    margin-top: 5vh;
+}
+
+.pergunta{
+    margin-top: 2vh;
+}
+
+#perguntar-btn{
+    margin-top: 1vh;
+}
+
+#pergunta{
+    margin-top: 2vh;
+}
+
+#responder{
+    margin: 2vh;
+}
