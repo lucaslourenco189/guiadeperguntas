@@ -5,11 +5,13 @@
     <!-- Navbar aqui -->
     <%- include('./partials/navbar.ejs')%>
     <div class="container">
-        <h1 class="pergunta">Perguntas</h1>
+        <div class="mx-auto" style="width: 200px;">
+            <h1 class="pergunta">Perguntas</h1>
+        </div>
         <a href="/perguntar" class="btn btn-dark" id="perguntar-btn">Perguntar</a>
         <br>
         <% perguntas.forEach(pergunta => { %>
-            <br>
+        <br>
         <div class="card">
             <div class="card-body">
                 <h3><%= pergunta.titulo %></h3>
@@ -19,6 +21,7 @@
             </div>
         </div>
         <% }) %>
+        <br>
     </div>
 </body>
 <!-- Footer/Scripts Aqui -->

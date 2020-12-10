@@ -6,16 +6,18 @@
     <%- include('./partials/navbar.ejs')%>
     <div class="container">
         <hr>
-        <h1 id="pergunta">
-            <%= pergunta.titulo %>
-        </h1>
-        <p>
-            <%= pergunta.descricao %>
-        </p>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title"><%= pergunta.titulo %></h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text"><%= pergunta.descricao %></p>
+            </div>
+        </div>
         <hr>
         <form method="POST" action="/responder">
-            <h3>Responda</h3>
-            <label>Sua resposta:</label>
+            <h2 class="card-title">Sua resposta:</h2>
+            <br>
             <textarea placeholder="Digite sua resposta" class="form-control" name="corpo"></textarea><br>
             <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
             <button type="submit" class="btn btn-dark">Responder</button>
@@ -29,6 +31,7 @@
                 <p><%= resposta.corpo %></p>
             </div>
         </div>
+        <br>
         <% }) %>
     </div>
 </body>
