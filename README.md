@@ -4,3 +4,4 @@ Arquivos da Atividade do curso de NodeJS.
 ```node
 npm install
 ```
+### Alterar as configurações do arquivo database.js
